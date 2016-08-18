@@ -50,6 +50,7 @@ npm install -g bower
 npm install -g typings
 npm install -g hexo-cli
 npm install -g typescript
+npm install -g node-gyp
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
