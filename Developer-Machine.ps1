@@ -53,6 +53,9 @@ npm install -g hexo-cli
 npm install -g typescript
 npm install -g node-gyp
 
+# Misc
+choco install windows-sdk-8.1
+
 if (Test-PendingReboot) { Invoke-Reboot }
 
 #cinst Microsoft-Hyper-V-All -source windowsFeatures
