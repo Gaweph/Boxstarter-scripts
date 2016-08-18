@@ -45,6 +45,7 @@ Install-ChocolateyVsixPackage ProPowerTools https://visualstudiogallery.msdn.mic
 Install-ChocolateyVsixPackage vstu2015 https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9/file/142077/10/vstu2015.msi
 
 # Node modules (Global)
+npm install --global --production windows-build-tools
 npm install -g gulp
 npm install -g bower
 npm install -g typings
