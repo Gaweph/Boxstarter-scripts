@@ -52,6 +52,7 @@ npm install -g typings
 npm install -g hexo-cli
 npm install -g typescript
 npm install -g node-gyp
+npm install -g npm-check-updates
 
 # Misc
 choco install windows-sdk-8.1
