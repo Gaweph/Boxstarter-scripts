@@ -39,6 +39,7 @@ cinst putty.install -y
 cinst spotify -y
 cinst vlc -y
 choco install steam -y
+choco install git.install
 
 # VS extensions
 Install-ChocolateyVsixPackage ProPowerTools https://visualstudiogallery.msdn.microsoft.com/d0d33361-18e2-46c0-8ff2-4adea1e34fef/file/29666/12/ProPowerTools.vsix
