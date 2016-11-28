@@ -38,7 +38,6 @@ choco install jdk8 -y
 cinst putty.install -y
 cinst spotify -y
 cinst vlc -y
-choco install steam -y
 choco install git.install
 
 # VS extensions
