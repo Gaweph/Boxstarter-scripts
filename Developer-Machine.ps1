@@ -45,8 +45,8 @@ choco install git.install
 #Install-ChocolateyVsixPackage vstu2015 https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9/file/142077/10/vstu2015.msi
 
 # Node modules (Global)
-npm install --global --production windows-build-tools
-npm install -g node-gyp
+#npm install --global --production windows-build-tools #Caused Reboot loop
+#npm install -g node-gyp #Potentially Causes Reboot loop
 npm install -g gulp
 npm install -g bower
 npm install -g typings
@@ -71,4 +71,4 @@ Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Vis
 
 # Update Windows and reboot if necessary
 Install-WindowsUpdate -AcceptEula -GetUpdatesFromMS
-if (Test-PendingReboot) { Invoke-Reboot }
+#if (Test-PendingReboot) { Invoke-Reboot }
