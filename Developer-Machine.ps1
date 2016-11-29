@@ -32,7 +32,7 @@ cinst notepadplusplus -y
 cinst 7zip.install -y
 cinst adobereader -y
 cinst skype -y
-cinst dropbox -y
+#cinst dropbox -y
 cinst virtualbox -y
 choco install jdk8 -y
 cinst putty.install -y
@@ -40,18 +40,19 @@ cinst putty.install -y
 cinst vlc -y
 choco install git.install
 
-# VS extensions
-Install-ChocolateyVsixPackage ProPowerTools https://visualstudiogallery.msdn.microsoft.com/d0d33361-18e2-46c0-8ff2-4adea1e34fef/file/29666/12/ProPowerTools.vsix
-Install-ChocolateyVsixPackage vstu2015 https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9/file/142077/10/vstu2015.msi
+# VS extensions -- These do not seem to work
+#Install-ChocolateyVsixPackage ProPowerTools https://visualstudiogallery.msdn.microsoft.com/d0d33361-18e2-46c0-8ff2-4adea1e34fef/file/29666/12/ProPowerTools.vsix
+#Install-ChocolateyVsixPackage vstu2015 https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9/file/142077/10/vstu2015.msi
 
 # Node modules (Global)
 npm install --global --production windows-build-tools
+npm install -g node-gyp
 npm install -g gulp
 npm install -g bower
 npm install -g typings
 npm install -g hexo-cli
+npm install -g angular-cli
 npm install -g typescript
-npm install -g node-gyp
 npm install -g npm-check-updates
 
 # Misc
