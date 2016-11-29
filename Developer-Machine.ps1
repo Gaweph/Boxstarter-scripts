@@ -21,7 +21,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #Other dev tools
 cinst visualstudiocode -y
 cinst nodejs.install -y
-choco install unity -y
+#choco install unity -y
 
 #Browsers
 cinst googlechrome -y
@@ -36,7 +36,7 @@ cinst dropbox -y
 cinst virtualbox -y
 choco install jdk8 -y
 cinst putty.install -y
-cinst spotify -y
+#cinst spotify -y
 cinst vlc -y
 choco install git.install
 
