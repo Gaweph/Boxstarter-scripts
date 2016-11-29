@@ -58,7 +58,7 @@ npm install -g npm-check-updates
 # Misc
 choco install windows-sdk-8.1
 
-if (Test-PendingReboot) { Invoke-Reboot }
+#if (Test-PendingReboot) { Invoke-Reboot }
 
 #cinst Microsoft-Hyper-V-All -source windowsFeatures
 cinst IIS-WebServerRole -source windowsfeatures
