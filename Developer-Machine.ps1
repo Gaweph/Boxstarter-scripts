@@ -54,6 +54,7 @@ npm install -g hexo-cli
 npm install -g angular-cli
 npm install -g typescript
 npm install -g npm-check-updates
+npm install simplehttpserver -g
 
 # Misc
 choco install windows-sdk-8.1
