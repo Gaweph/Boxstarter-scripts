@@ -33,12 +33,13 @@ cinst 7zip.install -y
 cinst adobereader -y
 cinst skype -y
 #cinst dropbox -y
-cinst virtualbox -y
+#cinst virtualbox -y
 choco install jdk8 -y
 cinst putty.install -y
 #cinst spotify -y
 cinst vlc -y
 choco install git.install
+choco install rdcman
 
 # VS extensions -- These do not seem to work
 #Install-ChocolateyVsixPackage ProPowerTools https://visualstudiogallery.msdn.microsoft.com/d0d33361-18e2-46c0-8ff2-4adea1e34fef/file/29666/12/ProPowerTools.vsix
