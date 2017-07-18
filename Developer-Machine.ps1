@@ -15,31 +15,33 @@ Disable-InternetExplorerESC
 Get-ScheduledTask -TaskName *defrag* | Disable-ScheduledTask 
 
 # Install Visual Studio 2015
-# cinst visualstudio2015enterprise -- 2017 is now available!
 if (Test-PendingReboot) { Invoke-Reboot }
 
 #Other dev tools
 cinst visualstudiocode -y
-cinst nodejs.install -y
+cinst nodejs.install --version 7.10.0 -y
 #choco install unity -y
 
 #Browsers
 cinst googlechrome -y
 cinst firefox -y
 
-#Other tools
+#Other tools - Key
 cinst notepadplusplus -y
 cinst 7zip.install -y
-cinst adobereader -y
+cinst putty.install -y
+choco install git.install
+
+#Other tools - Optional
+# cinst adobereader -y
 # cinst skype -y
 # cinst dropbox -y
 # cinst virtualbox -y
-choco install jdk8 -y
-cinst putty.install -y
+# choco install jdk8 -y
 # cinst spotify -y
-cinst vlc -y
-choco install git.install
-choco install rdcman
+# cinst vlc -y
+# choco install rdcman
+
 
 # VS extensions -- These do not seem to work
 #Install-ChocolateyVsixPackage ProPowerTools https://visualstudiogallery.msdn.microsoft.com/d0d33361-18e2-46c0-8ff2-4adea1e34fef/file/29666/12/ProPowerTools.vsix
@@ -60,8 +62,6 @@ npm install simplehttpserver -g
 # Misc
 choco install windows-sdk-8.1
 
-#if (Test-PendingReboot) { Invoke-Reboot }
-
 #cinst Microsoft-Hyper-V-All -source windowsFeatures
 cinst IIS-WebServerRole -source windowsfeatures
 cinst IIS-HttpCompressionDynamic -source windowsfeatures
@@ -71,6 +71,5 @@ cinst IIS-WindowsAuthentication -source windowsfeatures
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"
 
-# Update Windows and reboot if necessary
+# Update Windows
 Install-WindowsUpdate -AcceptEula -GetUpdatesFromMS
-#if (Test-PendingReboot) { Invoke-Reboot }
