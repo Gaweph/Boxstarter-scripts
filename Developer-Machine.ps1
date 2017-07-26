@@ -16,7 +16,7 @@ Get-ScheduledTask -TaskName *defrag* | Disable-ScheduledTask
 
 # Install Visual Studio 2015
 # cinst visualstudio2015enterprise -- 2017 is now available!
-if (Test-PendingReboot) { Invoke-Reboot }
+#if (Test-PendingReboot) { Invoke-Reboot }
 
 #Other dev tools
 cinst visualstudiocode -y
@@ -33,9 +33,9 @@ cinst 7zip.install -y
 cinst adobereader -y
 # cinst skype -y
 # cinst dropbox -y
-# cinst virtualbox -y
+cinst virtualbox -y
 choco install jdk8 -y
-cinst putty.install -y
+#cinst putty.install -y
 # cinst spotify -y
 cinst vlc -y
 choco install git.install
@@ -52,7 +52,7 @@ npm install -g gulp
 npm install -g bower
 npm install -g typings
 # npm install -g hexo-cli
-npm install -g @angular/cli
+#npm install -g @angular/cli
 npm install -g typescript
 npm install -g npm-check
 npm install simplehttpserver -g
