@@ -31,13 +31,13 @@ cinst firefox -y
 cinst notepadplusplus -y
 cinst 7zip.install -y
 cinst adobereader -y
-# cinst skype -y
-# cinst dropbox -y
+#cinst skype -y
+#cinst dropbox -y
 cinst virtualbox -y
 choco install jdk8 -y
 #cinst putty.install -y
-# cinst spotify -y
-cinst vlc -y
+#cinst spotify -y
+#cinst vlc -y
 choco install git.install
 choco install rdcman
 
